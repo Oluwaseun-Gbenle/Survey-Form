@@ -1,0 +1,107 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tribute Page</title>
+        <link href= "survey.css" rel="stylesheet" type="text/css">
+        </head>
+    <body>
+        <div id = "main">
+            <h1 id="title" class="text-color"> Seun's Survey Form </h1>
+            <p class="text-color" id="description"> <em>Thank you for taking this survey</em></p>
+          </div>
+        
+          <div class="box">
+            <form id="survey-form" action="/action_page.php">
+        
+            <div class="form-style">
+                <label id="name-label" for="name">Name
+            <input  class="length"  id="name" type="text" required name="name" placeholder= "Enter your name"></label>
+              </div>
+        
+              <div class="form-style">
+                <label id="email-label" for="email">Email
+                <input class="length" id="email" type="text" required name="email" placeholder= "Enter your email address"></label>
+              </div>
+        
+              <div class="form-style">
+                <p class="text-color">Do you have pets?</p>
+                <div>
+                  <input type="radio" name="yes-no" id="yes">
+                  <label for="yes"> Yes</label>
+                </div>
+        
+                <div>
+                  <input type="radio" name="yes-no" id="no">
+                  <label for="no">No</label>
+                </div>
+              </div>
+        
+              <div class=form-style>
+                <label id="number-label" for="number">Number of pets:
+                  <input type="number" min="0" max="100" class="length" id="number" name="number"></label>
+              </div>
+        
+              <div class="form-style">
+                <p class="text-color">
+                  what type of pet(s) do you have?</p>
+              </div>
+              <div>
+                <input type="checkbox" class="input-shift" id="dog" value="dog" name="pet-typ">
+                <label for="dog">Dog</label>
+              </div>
+        
+              <div>
+                <input type="checkbox" class="input-shift" id="cat" value="cat" name="pet-typ">
+                <label for="cat">Cat</label>
+              </div>
+        
+              <div>
+                <input type="checkbox" class="input-shift" id="parrot" value="parrot" name="pet-typ">
+                <label for="parrot">Parrot</label>
+              </div>
+        
+              <div>
+                <input type="checkbox" class="input-shift" id="fish" value="fish" name="pet-typ">
+                <label for="fish">Fish</label>
+              </div>
+        
+              <div>
+                <input type="checkbox" class="input-shift" id="others" value="others" name="pet-typ">
+                <label for="others">Others</label>
+              </div>
+        
+              <div>
+                <input type="checkbox" class="input-shift" id="none" value="none" name="pet-typ">
+                <label for="none">None</label>
+              </div>
+        
+              <div class="form-style">
+                <p class="text-color">where did you get your pet?</p>
+              </div>
+              <div class="form-style">
+                <select class="length" id="place">
+                <option value="select">Select an option</option>
+                <option value="shelter">Animal Shelter</option>
+                 <option value="shop">Pet Shop</option>
+                 <option value="owners">Owners</option>
+                 <option value="others">Others</option>
+                </select>
+              </div>
+              <div class="form-style">
+                <p class="text-color">Please write suggestions to improve this survey:</p>
+                <div>
+                  <textarea name="suggestions" class="length2">Enter comment here</textarea> </div>
+                <button id="submit"class="length" type="submit">Submit</button>
+            </form>
+        
+            </div>
+
+
+
+
+     </body>
+
+
+</html>
